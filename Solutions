@@ -4,3 +4,15 @@ def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
     column_names=["student_id", "age"]
     total_data=pd.DataFrame(student_data,columns=column_names)
     return total_data
+
+
+
+#question 2
+# Given a dataframe, return the number of rows and columns as a list.
+import pandas as pd
+
+def getDataframeSize(players: pd.DataFrame) -> List[int]:
+    return list(players.shape)
+
+    
+    
