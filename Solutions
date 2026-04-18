@@ -15,4 +15,7 @@ def getDataframeSize(players: pd.DataFrame) -> List[int]:
     return list(players.shape)
 
     
-    
+import pandas as pd
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+    return employees.head(3);
