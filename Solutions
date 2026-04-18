@@ -37,3 +37,12 @@ def selectData(students: pd.DataFrame) -> pd.DataFrame:
 def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees['bonus']=employees['salary']*2;
     return employees
+
+
+#question 6
+# Given a dataframe, drop the duplicate rows based on the 'email' column, keeping only
+import pandas as pd
+
+def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
+    customers.drop_duplicates(subset='email',keep='first',inplace=True);
+    return customers;
