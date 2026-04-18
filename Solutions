@@ -20,3 +20,12 @@ import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.head(3);
+
+
+#question 4
+# Given a dataframe, return the name and age of the student with student_id 101.
+import pandas as pd
+
+def selectData(students: pd.DataFrame) -> pd.DataFrame:
+    return students.loc[students['student_id']==101,['name','age']]
+  
