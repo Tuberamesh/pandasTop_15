@@ -42,7 +42,8 @@ def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #question 6
 # Given a dataframe, drop the duplicate rows based on the 'email' column, keeping only
 import pandas as pd
+import pandas as pd
 
-def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
-    customers.drop_duplicates(subset='email',keep='first',inplace=True);
-    return customers;
+def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
+    students.dropna(subset =["name"],inplace=True)
+    return students;

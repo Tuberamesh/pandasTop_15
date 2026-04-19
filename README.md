@@ -29,7 +29,6 @@ Each solution is written in **clean, idiomatic Python** with brief comments expl
 ---
 
 ## 🗂️ Problem Index
-
 | # | Problem | Difficulty | Topic | LeetCode |
 |---|---------|------------|-------|----------|
 | 01 | Create a DataFrame from List | 🟢 Easy | DataFrame Creation | [#2877](https://leetcode.com/problems/create-a-dataframe-from-list/) |
