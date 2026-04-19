@@ -92,3 +92,14 @@ import pandas as pd
 
 def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
     return students.astype({"grade":int})
+
+
+
+
+#question 11
+# Given a dataframe, fill the missing values in the 'quantity' column with 0.
+import pandas as pd
+
+def fillMissingValues(products: pd.DataFrame) -> pd.DataFrame:
+    products['quantity'].fillna(0, inplace=True)
+    return products;
