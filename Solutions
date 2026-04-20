@@ -125,3 +125,19 @@ def pivotTable(weather: pd.DataFrame) -> pd.DataFrame:
     ans= weather.pivot(index='month', columns='city', values='temperature')
 
     return ans;
+
+
+
+
+
+
+#question 14
+# Given a dataframe, melt the table to have 'product' as the identifier variable and '
+import pandas as pd
+
+def meltTable(report: pd.DataFrame) -> pd.DataFrame:
+    return report.melt(
+        id_vars=['product'], 
+        var_name='quarter', 
+        value_name='sales'
+    )
